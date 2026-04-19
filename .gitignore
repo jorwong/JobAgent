@@ -1,5 +1,6 @@
-# Job applications — keep out of version control
+# Job applications and personal data — keep out of version control
 applied/
+master-resume.tex
 
 # Python
 __pycache__/
