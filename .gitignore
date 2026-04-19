@@ -1,0 +1,17 @@
+# Job applications — keep out of version control
+applied/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Scraped data
+jobs_scraped.json
+
+# macOS
+.DS_Store
