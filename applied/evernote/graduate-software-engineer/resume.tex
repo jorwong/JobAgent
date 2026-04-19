@@ -1,0 +1,285 @@
+\documentclass[letter-paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \input{glyphtounicode} % pdflatex only
+\usepackage{XCharter}
+
+\usepackage[letterpaper, margin=0.4in, top=0.3in, bottom=0.2in]{geometry}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+% \pdfgentounicode=1 % pdflatex only
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} $|$ \textit{#2} & #3 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectDescription}[1]{
+    \item \begin{itemize} \itemsep -1pt % Start a new itemize environment
+      \item \small{#1} % Scope \small within this environment
+    \end{itemize}
+}
+
+\newcommand{\resumeTechnologies}[1]{
+  \item{
+    \textit{\small Tech Stack: #1} \vspace{-8pt}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+\newenvironment{compactitemize}{
+    \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=1pt, topsep=1pt, partopsep=1pt]
+}{
+    \end{itemize}
+}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Wong See Siang, Jordan} \\ \vspace{0pt}
+    \small (+65) 9048 1857 $|$ Full Time $|$ \href{mailto:jorwong5@gmail.com}{\underline{jorwong5@gmail.com}} $|$
+    \href{https://linkedin.com/in/jorwong}{\underline{linkedin.com/in/jorwong}} $|$
+    \href{https://github.com/jorwong}{\underline{github.com/jorwong}} \vspace{0pt} 
+    % \\ \vspace{1pt} \small Internship Availability: Jan 2025 -- June 2025
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore (NUS)}{Aug 2022 -- Dec 2025}
+      {Bachelor of Computing in Information Systems (Honours, Distinction) - GPA: 4.32 / 5.00}{Singapore}
+  \resumeSubHeadingListEnd
+
+% \section{Certifications}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%         {AWS Solutions Architect - Associate}{SAA}{May 2025}
+%   \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{compactitemize}
+    \small
+    \item \textbf{Languages:}
+        Python,
+        Go,
+        Java,
+        JavaScript,
+        Bash,
+        SQL (MySQL)
+    \item \textbf{Frameworks \& Systems:}
+        Spring Boot,
+        React,
+        Node.js,
+        REST API,
+        Apache Kafka,
+        Apache Spark,
+        Microservices
+    \item \textbf{DevOps and Cloud:}
+        Docker, Kubernetes, AWS, GCP, Terraform, CI/CD, GitLab CI/CD, Jenkins, Ansible
+    \item \textbf{Certificates:}
+        AWS Solutions Architect - Associate | SAA
+       
+        
+\end{compactitemize}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {DevOps Engineer Intern}{May 2024 -- Present}
+    %   {GovTech}{Singapore}
+    %   \resumeItemListStart
+    %     \resumeItem{Implemented Asynchronous Instance Refresh: Enabled concurrent instance refresh from S3 with robust error handling, reducing refresh time by 50\% and ensuring continuous operation, improving scalability and reliability.}
+    %     \resumeItem{Optimised Infrastructure: Improved code quality and incident response by developing Lambda functions and automating RDS notifications, resulting in streamlined AWS management.}
+    %     \resumeItem{Infrastructure Documentation: Revamped existing infrastructure diagrams using Diagrams as Code, improving version control and update efficiency by 60\%.}
+    %     \resumeItem{Service Upgrades: Upgraded EKS, performed Lambda service maintenance, and renewed AWS RDS SSL/TLS certificates, enhancing performance, security, and reliability for over 15 microservices and associated applications.}
+    %   \resumeItemListEnd
+
+    % PAYPAL
+    \resumeSubheading
+    {Software Engineer Intern}{Aug 2025 -- Dec 2025}
+    {PayPal}{Singapore}
+    \resumeTechnologies{Node.js, Javascript, React, Java, Python, Spark, Docker, GCP, BigQuery}
+    \resumeItemListStart
+        \resumeItem{\textbf{End-to-End Data Pipeline:} Took full ownership of designing and deploying a Spark-based migration pipeline to consolidate legacy account data into a modernized database; architected automated data flows and cloud storage schemas (GCS), achieving 100\% data integrity across millions of records.}
+        \resumeItem{\textbf{Embedded Payments Platform:} Built Embedded Path end-to-end, enabling partner platforms to onboard, manage, and support merchants directly within their own systems --- simplifying a previously fragmented workflow into a unified integration.}
+        \resumeItem{\textbf{Self-Service Tooling:} Redesigned core business tools to eliminate engineering bottlenecks, giving teams self-service page creation capabilities and reducing operational complexity.}
+    \resumeItemListEnd
+
+    % JPM CHASE
+    \resumeSubheading
+    {Software Engineer Intern}{Jun 2025 -- Aug 2025}
+    {JPMorgan Chase}{Singapore}
+    \resumeTechnologies{Python, Jupyter Notebook, SIEM}
+    \resumeItemListStart
+        \resumeItem{\textbf{Cyber Operations:} Contributed to cyber operations by conducting attack analysis and protecting JPMorgan Chase's systems from potential threats. Collaborated with cross-functional teams to enhance security measures.}
+        \resumeItem{\textbf{Threat Detection Tooling:} Optimized threat detection tools by improving Jupyter Notebook performance and building custom widgets, streamlining the cyber operations workflow and increasing analyst efficiency.}
+        \resumeItem{\textbf{Cross-Region Dashboard:} Collaborated with UK counterparts to develop a SIEM dashboard for conducting impact analysis when a URL is blocked, serving global security operations.}
+    \resumeItemListEnd
+    
+     \resumeSubheading
+    {DevOps Engineer Intern - Citizen Disbursement System}{May 2024 -- Feb 2025}
+    {GovTech}{Singapore}
+    \resumeTechnologies{Spring Boot, Python, Terraform, AWS, Kubernetes, Apache Kafka, Docker, Java, JavaScript, HTML, CSS}
+    \resumeItemListStart
+        \resumeItem{\textbf{Microservices at Scale:} Developed and optimized microservices using Spring Boot, Apache Kafka, and Docker, serving government payouts for 4 million citizens with end-to-end ownership from design to production deployment on Kubernetes.}
+        \resumeItem{\textbf{Reusable Component Library:} Designed 5+ reusable web components for internal tools, simplifying frontend development across teams and reducing duplicated effort by 20\%.}
+        \resumeItem{\textbf{Pipeline Simplification:} Streamlined data pipelines by automating S3 file transfers via AWS Lambda, eliminating manual processing steps and reducing pipeline overhead by 30\%.}
+        \resumeItem{\textbf{File Processing Service:} Architected and deployed a file retrieval service on ECS, automating decryption and storage optimization end-to-end, reducing errors by 15\% across 4M+ transactions.}
+    \resumeItemListEnd
+
+      
+      % \resumeSubheading
+      % {DevOps Engineer Intern - Citizen Disbursement System}{May 2024 -- Oct 2024}
+      % {GovTech}{Singapore}
+      % \resumeTechnologies{Bash, Python, Terraform, AWS, Packer, GitLab, Kubernetes, Docker, Java, JavaScript, CheckOv, Ansible}
+      % \resumeItemListStart
+      %   % Async AMI refresher
+      %   \resumeItem{\textbf{Revamped Service Updates:} Automated EC2 instance upgrades with new AMIs using Python to switch to async, reducing update time by 50\% and removing manual steps for consistent service.}
+      %  % Slack Notification for services
+      %   \resumeItem{\textbf{Improved System Management:} Built an AWS Lambda, SNS and EventBridge solution for Slack alerts, ensuring notifications within 3 minutes.}  
+      %   % \resumeItem{Upgraded Documentation: Updated and improved the infrastructure documentation using Diagrams as Code, making it easier to keep track of and update system details.}
+      %   % AMIs stored as EBS storage, 0.05 per GB per month. Assuming 1 image is 10 GB, then 0.50 per image per month so 
+      %   % $ 300 saved per month and $900 per quater so $3600 anually
+      %   \resumeItem{\textbf{Cost Savings:} Developed and integrated a script into GitLab CI to remove obsolete AMIs quarterly, saving approximately \$2400 annually by deleting over 600 images every 3 months.}
+
+      %   % This is when we are manipulating and performing updgardes such as rotating certs, increasing versions of softwares such as python, gitlab using Terraform and Kubernetes
+      %   % \resumeItem{Enhanced System Performance: Upgrading and maintaining over 15 microservices to enhance performance, security, and reliability for diverse services and applications.}
+        
+
+      %   % FILE GATEWAY REVAMP
+      %   \resumeItem{\textbf{File Retrieval and Processing Service:} Developed and deployed a file retrieval service on ECS, automating decryption and storage optimization, reducing errors by 15\% and enhancing reliability for 4M+ transactions.}
+
+      % \resumeItemListEnd
+
+    % NETS - removed for this version
+
+
+    % Can REMOVE IF NOT NEEDED...
+    
+    % \resumeSubheading
+    % {Software Engineer Intern}{May 2022 -- Aug 2022}
+    % {Fitthree}{Singapore}
+    % \resumeTechnologies{Python, Docker, Docker Compose, Git, Microsoft Azure, SQLite}
+    %   \resumeItemListStart
+    %     \resumeItem{\textbf{Attendance Optimization:} Built a Python Telegram bot using Docker on Azure to automate attendance tracking, saving 5 hours weekly and reducing manual effort.}
+    %     \resumeItem{\textbf{Process Improvement Proposals:} Analyzed existing processes and presented proposals to management for software improvements and automation.}
+    %   \resumeItemListEnd
+    %     % For DevOps Heavy Role
+    % \resumeSubheading
+    %   {DevOps Engineer Intern}{Sep 2019 -- Mar 2020}
+    %   {Fidor FZCO}{UAE, Dubai}
+    %   \resumeTechnologies{Docker, Jenkins, Amazon Web Services, Confluence, Git, Bash, Linux.}
+    %   \resumeItemListStart
+    %     \resumeItem{\textbf{CI/CD Efficiency Boost:} Implemented automated CI / CD pipelines, increased productivity by 40\% by reducing build and deployment times from 10 to 6 minutes and reducing manual update time by 25\%.}
+    %     \resumeItem{\textbf{Infrastructure Automation:} Automated AWS infrastructure setup with CloudFormation, reducing the setup time by over 20\%.}
+    %     \resumeItem{\textbf{Migration Project Lead:} Led the transfer of more than 5000 test cases to TestRails, ensuring efficient project completion and continuity.}
+    %   \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects \& Extra Curricular}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {LazyKafka}{Go, Kafka, Docker, Tview}{Present}
+    \resumeItemListStart
+        \resumeItem{Built a TUI from scratch in Go for real-time Kafka administration --- visualizes message streams, manages topics (create/delete/offset), and monitors partition health. Designed for simplicity over heavier GUI tools.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+        {HealthPal}{Python, MongoDB, Docker, Java, React, JavaScript}{May 2024}
+    \resumeItemListStart
+        \resumeItem{Full-stack web app integrating LLMs to predict diseases from user-reported symptoms, recommend medications, and locate nearby pharmacies with real-time availability.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Resume white text if needed
+{\color{black}\fontsize{2pt}{2pt}\selectfont }
+
+%-------------------------------------------
+\end{document}
+
+Questions
+https://chatgpt.com/share/354c52e3-9bc7-4118-947f-809220871152

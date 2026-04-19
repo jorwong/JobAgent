@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jobagent"
+version = "0.1.0"
+description = "A TUI-based Job Agent that scrapes jobs, tailors resumes, and auto-applies"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=0.80",
+    # "anthropic>=0.40",  # only needed if using API directly
+    "playwright>=1.40",
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+jobagent = "jobagent.__main__:main"
+tailor-resume = "jobagent.core.resume_tailor:main"
+compile-resume = "jobagent.core.latex_compiler:main"
+cover-letter = "jobagent.core.cover_letter:main"
+
+[project.entry-points."jobagent.scrapers"]
+linkedin = "jobagent.scrapers.linkedin:LinkedInScraper"
+indeed = "jobagent.scrapers.indeed:IndeedScraper"
+
+[project.entry-points."jobagent.appliers"]
+linkedin = "jobagent.appliers.linkedin:LinkedInApplier"
+generic = "jobagent.appliers.generic:GenericApplier"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jobagent"]
